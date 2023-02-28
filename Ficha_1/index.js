@@ -1,4 +1,4 @@
-console.log("Hello world!");
+
 
 /*5.Implemente uma função que calcule a nota final da disciplina dada a sua nota prática e teórica e imprima
 se o aluno está aprovado ou reprovado.*/
