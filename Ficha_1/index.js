@@ -4,26 +4,26 @@
 se o aluno está aprovado ou reprovado.*/
 
 
-function calculateFinalGrade(np, nt){
-    var nf = np * 0.6 + nt * 0.4;
+function calculateFinalGrade(np, nt){                        //primeiro criamos uma funcao com doi argumento
+    var nf = np * 0.6 + nt * 0.4;                           // depois criamos uma rariavel
          
-    if(nf > 9.5){                         /////////////////////maior
-        console.log("APROVADO");
+    if(nf > 9.5){                                           ////se nf for maior que 9,5
+        console.log("APROVADO");                           /////aqui vai imprimir aprovado
 
     }
-    else{
-        console.log("REPROVADO");
+    else{                                            ////// caso contrario quer dizer se sor menor
+        console.log("REPROVADO");                   //////aqui vai imprimir reprovado
     }
 
-     return nf;
+     return nf;                                  // quer dizer retornar o valor
 }
-/*var finalGrade = calculateFinalGrade(12,14);
+/*var finalGrade = calculateFinalGrade(12,14);         ///aqui e invocacao da funcao onde sera chamado
 console.log(finalGrade);*/
 
 ////6.Implemente uma função que receba como argumento o número do mês e imprima o nome por extenso////////////////////
 
 function getMonthName(monthNumber){
-    if(monthNumber == 1)
+    if(monthNumber == 1)                          //aqui  o == vai fazer uma comparacao se for igual a 1 ele imprimi o primeiro mes que e janeiro
         console.log("Janeiro");
     else if(monthNumber == 2)
         console.log("Fevereiro");
@@ -56,7 +56,7 @@ function getMonthName(monthNumber){
 da operação sobre os números*/
 
 function calculator(operador1, operador2, operator) {
-    var result = 0;
+    var result = 0;                                      //// criamos a variavel para guadar o valor
     if(operator == '+')
        return operador1 + operador2;
     else if(operator == '-')
@@ -102,8 +102,8 @@ function sumOf() {
 function factorial(n){
     var fact = 1;
     for(var i = n; i > 1; i--){
-          /*fact * i     esse nao guarda valor*/
-        fact *= i;  /*esse guarda o valor*/
+          /*fact * i                        esse nao guarda valor*/
+        fact *= i;                            /*esse guarda o valor*/
     }
     return fact;                      
 }
@@ -144,17 +144,18 @@ function max(array){
 function media(array){
     var med = 0;
     for( var i = 0; i < array.length; i++){
-        med = med + array[i];
+        med += array[i];
        
     }
     med = med /array.length;
     
+    return med;
    
-   console.log(med)
+   
     
     
 }
-media([2, 3, 7, 9, 0, 10]);
-
+var array = [2, 3, 7, 9, 0, 10];
+console.log(media(array));
 
 
